@@ -7,7 +7,7 @@ const MovieReviews = ({ reviews }) => {
       {reviews.length !== 0
         ? reviews.map((review) => {
             return (
-              <div key={review.display_title}>
+              <div className="review" key={review.display_title}>
                 <img
                   src={review.multimedia ? review.multimedia.src : ""}
                   alt="someImage"
